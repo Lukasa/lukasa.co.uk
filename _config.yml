@@ -1,0 +1,37 @@
+# Site wide configuration
+
+title: "Lukasa's Echochamber"
+description: "A blog of technology, programming and life. Cookies are optional."
+logo: "echochamber_logo.png"
+teaser: "teaser.png"
+locale:
+url: http://lukasa.co.uk
+name: "Lukasa's Echochamber"
+
+# Jekyll configuration
+
+sass:
+    sass_dir: _sass
+    style: compressed
+permalink: /:categories/:year/:month/:title/
+kramdown:
+  toc_levels: 1..2
+highlighter: pygments
+gems:
+  - jekyll-sitemap
+
+
+# Site owner
+owner:
+  name: "Cory Benfield"
+  email: "lukasaoz@gmail.com"
+  twitter: "lukasaoz"
+  google:
+    ad-client: "ca-pub-4960110047160240"
+    ad-slot: "4694319617"
+  bio: "He's just this guy, you know?"
+  avatar: bio-photo.jpg # 160x160 px image for author byline
+disqus-shortname: echochamber
+
+
+exclude: ["lib", "config.rb", ".sass-cache", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "*.sublime-project", "*.sublime-workspace", "Gemfile", "Gemfile.lock", "README.md", "LICENSE", "node_modules", "Gruntfile.js", "package.json"]
