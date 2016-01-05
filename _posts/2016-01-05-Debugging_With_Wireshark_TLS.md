@@ -55,7 +55,7 @@ Each row of the table is a single network packet as recorded by your operating s
 - 802.11, also known as Ethernet, which comes in 'frames'.
 - The Internet Protocol, IP, encapsulated inside each ethernet frame, which comes in 'packets'.
 - The Transmission Control Protocol, TCP, encapsulated inside each IP packet, which comes in 'segments'.
-- Transport Layer Security, TLS, carried over the TCP bytestream, which comes in 'records'.
+- Transport Layer Security, TLS, carried over the TCP bytestream, which comes in 'records' and 'messages'.
 - The Hypertext Transfer Protocol, HTTP, carried inside the encrypted TLS connection. This is invisible to Wireshark, because it should have been encrypted by TLS! (This isn't actually *entirely* true: in a future post I'll talk about how to view encrypted HTTP traffic.)
 
 Wireshark knows lots about network protocols, using components called 'dissectors'. These dissectors, many of which ship with Wireshark, tell Wireshark how to translate from the bits and bytes from the network into a structured representation of the data. This is why Wireshark is useful: you can avoid hand-decoding the data on the network, and let Wireshark do it for you instead!
@@ -72,15 +72,15 @@ So, with a basic understanding of how to look at things in Wireshark, let's dive
 
 Let's start by scrolling down to the first packet Wireshark identifies as having a "TLSv1.2" record in it. Selecting it, you'll notice that Wireshark has a new level of its expandable selectors: "Secure Sockets Layer". This is the old name for TLS.
 
-Inside it, Wireshark says there's one TLS record contained here: a "Client Hello" record. This is, coincidentally, the first record sent as part of a TLS connection, and it's sent by the client. If you expand this record up, you'll see that it's very long (197 bytes in my case), and contains lots of information!
+Inside it, Wireshark says there's one TLS handshake message contained here: a "Client Hello" message. This is, coincidentally, the first message sent as part of a TLS connection, and it's sent by the client. If you expand this message up, you'll see that it's very long (197 bytes in my case), and contains lots of information!
 
 ### Client Hello
 
-Let's talk about the Client Hello record for a moment. The purpose of this record is to let the client give the server some information about what it wants to do. There's *loads* of data here, but I'll take you into the things that are most important to understand (in part because they're the bits that go wrong the most).
+Let's talk about the Client Hello message for a moment. The purpose of this message is to let the client give the server some information about what it wants to do. There's *loads* of data here, but I'll take you into the things that are most important to understand (in part because they're the bits that go wrong the most).
 
 #### Versions
 
-Firstly, you can see that there are actually two TLS version fields here: the first is in the outer TLS wrapper, while the second is inside the Client Hello. The outer TLS field is a lower version than the inner one: in this case, the outer layer is TLSv1.0, while the inner layer is TLSv1.2. This acts essentially to bound the set of TLS versions the client and server support: here, the client is saying that the lowest TLS version it'll use is TLSv1, while the newest is TLSv1.2. Some servers mistakenly only care about the *outer* version number, and will shut down connections that don't advertise themselves as sufficiently new.
+Firstly, you can see that there are actually two TLS version fields here: the first is in the outer TLS wrapper, while the second is inside the Client Hello. The outer TLS field is a lower version than the inner one: in this case, the outer layer is TLSv1.0, while the inner layer is TLSv1.2. This acts essentially to bound the set of TLS versions the client and server support: here, the client is saying that the lowest TLS version it'll use is TLSv1, while the newest is TLSv1.2. Some servers mistakenly only care about the *outer* version number, and will shut down connections that don't advertise themselves as sufficiently new[^1].
 
 #### Cipher Suites
 
@@ -111,7 +111,7 @@ There are some other useful fields here that are worth checking out (e.g. the El
 
 ### Server Hello
 
-The next record is going back the other way, from the server to the client, and it's called the Server Hello. This record serves a similar purpose to the Client Hello: it lets the server tell the client important information about how the TLS connection will progress and what the server can do.
+The next message is going back the other way, from the server to the client, and it's called the Server Hello. This message serves a similar purpose to the Client Hello: it lets the server tell the client important information about how the TLS connection will progress and what the server can do.
 
 The key difference between the Server Hello and the Client Hello is that, while the Client Hello is *informational*, the Server Hello is *instructional*. In the Client Hello the client says "I can do X", while in the Server Hello the server says "we will do X".
 
@@ -121,7 +121,7 @@ The following fields of the Server Hello are of interest.
 
 #### Versions
 
-Like the Client Hello, there are two version numbers in the Server Hello: one in the outer wrapper and one in the record itself. *Unlike* the Client Hello, these should be the same. This is because the Server should have chosen a TLS version to use. In almost all cases this will be the highest common version between the client and server. In the case of my example, that's TLSv1.2.
+Like the Client Hello, there are two version numbers in the Server Hello: one in the outer wrapper and one in the message itself. *Unlike* the Client Hello, these should be the same. This is because the Server should have chosen a TLS version to use. In almost all cases this will be the highest common version between the client and server. In the case of my example, that's TLSv1.2.
 
 #### Cipher Suite
 
@@ -143,7 +143,7 @@ Here the server doesn't support ALPN, so sent no response to that. It does suppo
 
 ### Certificate
 
-The next record also comes from the server, and is the Certificate record. Here the server sends a serialized representation of the TLS certificates that the client should validate.
+The next message also comes from the server, and is the Certificate message. Here the server sends a serialized representation of the TLS certificates that the client should validate.
 
 These certificates perform a vital role. Firstly, they let a client authenticate a server, so that the client can confirm that the server is allowed to send data for the domain name being reached. Secondly, they provide the client with a public key that is used to help establish the encryption with some cipher suites.
 
@@ -153,35 +153,38 @@ If your TLS client fails to validate the certificate, there could be a number of
 
 1. The leaf certificate may not be valid for the domain. A certificate is valid if either it has the correct "dNSName" (not a typo) field in its Subject Alternative Name (subjectAltName, or SAN) extension, or if it has the correct "commonName" (displayed by Wireshark as "id-at-commonName") field in its *Subject* field.
 2. The leaf certificate may not chain up to a trusted root certificate. In general this happens in one of two ways:
-    1. The server may not be sending "intermediate certificates". In general a leaf certificate is signed by a certificate that is not itself a trusted root certificate. A well-configured server will actually provide that intermediate certificate as part of the Certificate record, to prevent clients needing to have every intermediate certificate in the world in their trust database, but this doesn't always happen.
+    1. The server may not be sending "intermediate certificates". In general a leaf certificate is signed by a certificate that is not itself a trusted root certificate. A well-configured server will actually provide that intermediate certificate as part of the Certificate message, to prevent clients needing to have every intermediate certificate in the world in their trust database, but this doesn't always happen.
     2. The server may have a cross-signed trust root. This breaks some older TLS stacks. I won't go into it here, because it's too complex and makes me sad.
 
 ### Server Key Exchange (Optional)
 
-Immediately following the Certificate record the server *may* send a Server Key Exchange record. This is sent only for specific cipher suites: specifically, either DHE or ECDHE cipher suites. This record is used to establish the ephemeral key for the encryption algorithm using Diffie-Hellman (or Elliptic-Curve Diffie-Hellman) key negotiation.
+Immediately following the Certificate message the server *may* send a Server Key Exchange message. This is sent only for specific cipher suites: specifically, either DHE or ECDHE cipher suites. This message is used to establish the ephemeral key for the encryption algorithm using Diffie-Hellman (or Elliptic-Curve Diffie-Hellman) key negotiation.
 
 I'm not going to go into the structure of this message too much because if it's wrong then your server is so totally screwed there's no saving you. However, in general this will contain the server's half of the information required for the Diffie Hellman negotiation.
 
 ### Server Hello Done
 
-The next record should be the Server Hello Done, also sent by the server. This does exactly what it says on the tin: tells the client that the Server Hello is over. This is needed because of some optional records that I'm not covering here, mostly used with TLS client certificates, that are also part of the Server Hello.
+The next message should be the Server Hello Done, also sent by the server. This does exactly what it says on the tin: tells the client that the Server Hello is over. This is needed because of some optional messages that I'm not covering here, mostly used with TLS client certificates, that are also part of the Server Hello.
 
 ### Client Key Exchange
 
-This record *may* be sent if the server sent a Server Key Exchange record. This is used for the client's portion of the Diffie-Hellman key negotiation. I'm not going to go into this further here.
+This message *may* be sent if the server sent a Server Key Exchange message. This is used for the client's portion of the Diffie-Hellman key negotiation. I'm not going to go into this further here.
 
 ### Change Cipher Spec
 
-This is an interesting one, because it's not *strictly* a TLS record. Instead, it tells the remote party that all further messages will be encrypted using the agreed-upon cipher suite. This can only be done at this point because it's guaranteed that the key exchange will be complete, that the certificates will have been verified, and that everyone is happy to continue with the transaction.
+This is an interesting one, because it's not *strictly* a part of the handshake protocol. Instead, it tells the remote party that all further messages will be encrypted using the agreed-upon cipher suite. This can only be done at this point because it's guaranteed that the key exchange will be complete, that the certificates will have been verified, and that everyone is happy to continue with the transaction.
 
 The server will send a Change Cipher Spec message as well.
 
 ### Done!
 
-At this point, we can no longer see into the rest of the TLS handshake. Happily, the handshake very rarely fails at this point because all that remains is for both sides to send their Finished record, encrypted using the agreed cipher suite.
+At this point, we can no longer see into the rest of the TLS handshake. Happily, the handshake very rarely fails at this point because all that remains is for both sides to send their Finished message, encrypted using the agreed cipher suite.
 
 This represents a very high-level overview of the way the TLS handshake is done. As you can see, it's already pretty complicated and lengthy, and that is without going into any of the cryptographic signing and negotiation that is happening along the way.
 
 I highly recommend taking 15 or 20 more minutes to look at the handshake in more detail, and to Google anything you don't understand. You should also consider capturing handshakes from other websites, to see how they differ from the one you've looked at here.
 
 Next time, we'll look at some tips and tricks for debugging HTTP with Wireshark, and I'll also talk about how to do debug HTTPS requests so you can see the rest of the handshake (and feel like you're a spy).
+
+
+[^1]: Actually, there's some complexity around this field. In the upcoming TLSv1.3 standard, the spec will require that the outer version number always be set to TLSv1.0. This is done with a goal of minimising the number of mistakes servers and clients can make by paying attention to or incorrectly setting the outer version number. Regardless, this remains a field worth keeping an eye on.
