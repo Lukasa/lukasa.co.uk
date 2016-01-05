@@ -180,6 +180,12 @@ The server will send a Change Cipher Spec message as well.
 
 At this point, we can no longer see into the rest of the TLS handshake. Happily, the handshake very rarely fails at this point because all that remains is for both sides to send their Finished message, encrypted using the agreed cipher suite.
 
+#### Side Note: Encrypted Alert
+
+Depending on how screwed up your client and server are, it is possible that an error will occur during the key exchange. This won't get discovered until *after* the Change Cipher Spec, which means you won't see a very clear error. However, Wireshark will note that your client/server received an "Encrypted Alert". This is very often the result of broken key negotiation, and should be investigated.
+
+### Up Next
+
 This represents a very high-level overview of the way the TLS handshake is done. As you can see, it's already pretty complicated and lengthy, and that is without going into any of the cryptographic signing and negotiation that is happening along the way.
 
 I highly recommend taking 15 or 20 more minutes to look at the handshake in more detail, and to Google anything you don't understand. You should also consider capturing handshakes from other websites, to see how they differ from the one you've looked at here.
