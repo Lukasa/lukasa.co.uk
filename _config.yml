@@ -17,7 +17,7 @@ permalink: /:categories/:year/:month/:title/
 markdown: kramdown
 kramdown:
   toc_levels: 1..2
-highlighter: pygments
+highlighter: rouge
 gems:
   - jekyll-sitemap
 
