@@ -1,6 +1,6 @@
 ---
 layout: article
-title: "Let's Talk About TLS"
+title: "In Response To Sucuri Security"
 comments: true
 ads: false
 image:
