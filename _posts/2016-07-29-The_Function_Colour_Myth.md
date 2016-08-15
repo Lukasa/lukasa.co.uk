@@ -189,7 +189,7 @@ So when we have discussions about extending the `async` paradigm to another Pyth
 
 All of this is possible. The community just needs to get comfortable with the idea that `async` is a tool for improving code clarity, rather than a requirement for writing asynchronous code. And I know I've spoken at length about Twisted here, but I think it's important to remember that Twisted has learnt these lessons and learnt them well. Perhaps more importantly, though, it taught those lessons to asyncio. Every time you think you'll use asyncio's [Streams API](https://docs.python.org/3/library/asyncio-stream.html), stop and consider whether you can use [Protocols instead](https://docs.python.org/3/library/asyncio-protocol.html#asyncio-protocol). Because streams are coloured, but Protocols aren't, and using Protocols will force you into a style where you avoid colouring your functions unnecessarily. This gives you the opportunity to write a codebase that is protected from the difficulties of coloured functions, where your code is testable without an event loop, where it can be run in a synchronous mode if you require it, and where it provides the opportunity for substantial code reuse.
 
-## 2 Σ ⇑
+## 2 Σ ↑
 
 Code colour is a *convenience*, not a requirement. And we shouldn't get too worked up about it, or worry that we're segmenting our code. Instead, we should focus on using code colour sparingly, because while it adds clarity it also hurts reusability. Making that trade off well is one of the skills of being a programmer, and we should inform our community about that trade off, and then trust them to make the right call.
 
