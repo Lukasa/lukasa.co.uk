@@ -27,13 +27,13 @@ However, the phrase has got a dark side. This dark side comes from its regular d
 
 "Patches welcome", in this case, is a code-phrase. In this context, it means "I don't care enough about your problem to fix it, or even to put it on a roadmap". In many cases it can even mean "I don't really acknowledge this as a problem worth fixing, but if you fix it then I will merge that patch I guess".
 
-Worse, however, is the fact that this phrase also implicitly says "If you don't have the skills to fix your problems yourself, you don't deserve to have them fixed at all". It is another example of what Aurynn describes as [contempt culture](): it is, once again, programmers prizing the ability to code above all else.
+Worse, however, is the fact that this phrase also implicitly says "If you don't have the skills to fix your problems yourself, you don't deserve to have them fixed at all". It is another example of what Aurynn describes as [contempt culture](http://blog.aurynn.com/contempt-culture): it is, once again, programmers prizing the ability to code above all else.
 
 Naturally, deployed like this the phrase *is* dismissive: I don't think anyone would reasonably disagree. It's an attempt to end the conversation by saying that the maintainer will not help you, and that you must help yourself.
 
 ## Consider The Maintainer
 
-Now, to be clear, I believe that maintainers *absolutely have the right* to say "this is not important to the project so I will not accept it". Like Jess Frazelle, [I believe maintainers should say "no" a lot](). But we should try to avoid being dismissive when we do it. We shouldn't denigrate the efforts of others, or suggest that some people's problems are less important.
+Now, to be clear, I believe that maintainers *absolutely have the right* to say "this is not important to the project so I will not accept it". Like Jess Frazelle, [I believe maintainers should say "no" a lot](https://blog.jessfraz.com/post/the-art-of-closing/). But we should try to avoid being dismissive when we do it. We shouldn't denigrate the efforts of others, or suggest that some people's problems are less important.
 
 The problematic "patches welcome" phrase is easily replaced. It's not hard to say "Sorry, but the maintenance team doesn't have the bandwidth to address this problem right now. It's definitely a problem, and if someone can provide a fix for it we'll work with them to get it merged, but none of the regular contributors are going to be able to get to this any time soon." Hell, if you're a developer who likes using the phrase "patches welcome" you should consider binding that entire quote to a keyboard macro so it inserts itself instead of "patches welcome".
 
