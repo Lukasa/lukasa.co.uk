@@ -12,11 +12,11 @@ cloudfront_distribution_id: E1CO0FFVDDGM9Y
 # error_document: error.html
 
 max_age:
-  "css/*": 6000
-  "fonts/*": 6000
-  "images/*": 6000
-  "js/*": 6000
-  "*": 300
+  "css/*": 604800
+  "fonts/*": 31536000
+  "images/*": 31536000
+  "js/*": 604800
+  "*": 86400
 
 gzip: true
 # gzip_zopfli: true
