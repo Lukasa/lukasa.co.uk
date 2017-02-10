@@ -2,7 +2,6 @@
 layout: article
 title: Building a Minimalist Blog in Python (or, How I Learned to Stop Worrying and Love Web Development).
 comments: true
-ads: true
 ---
 
 As of today, I have taken my final examination as an undergraduate student of

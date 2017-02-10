@@ -2,7 +2,6 @@
 layout: article
 title: Not Everyone Needs To Be A Rockstar
 comments: true
-ads: true
 ---
 
 Getting started in open-source software is intimidating. I know, I've been

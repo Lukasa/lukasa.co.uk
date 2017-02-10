@@ -2,7 +2,6 @@
 layout: article
 title: A Story About Control
 comments: true
-ads: true
 ---
 
 There once was a time when we were in control of our identity. When we met

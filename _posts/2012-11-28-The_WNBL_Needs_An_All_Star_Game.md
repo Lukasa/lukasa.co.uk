@@ -2,7 +2,6 @@
 layout: article
 title: The WNBL Needs An All-Star Game
 comments: true
-ads: true
 ---
 
 _Author's Note: This is yet another digression into talking about sports.

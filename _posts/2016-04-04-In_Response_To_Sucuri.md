@@ -2,7 +2,6 @@
 layout: article
 title: "In Response To Sucuri Security"
 comments: true
-ads: false
 image:
   feature: palais.jpg
   teaser: palais-teaser.jpg

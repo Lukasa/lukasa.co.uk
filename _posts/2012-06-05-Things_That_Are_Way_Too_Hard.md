@@ -2,7 +2,6 @@
 layout: article
 title: Things That Are Way Too Hard
 comments: true
-ads: true
 ---
 
 When I went to university, I found myself studying Physics at the

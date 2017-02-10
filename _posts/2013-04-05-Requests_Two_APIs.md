@@ -2,7 +2,6 @@
 layout: article
 title: Requests' Two APIs
 comments: true
-ads: true
 ---
 
 [Kenneth Reitz](http://kennethreitz.org/)'s excellent

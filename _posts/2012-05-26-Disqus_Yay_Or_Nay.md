@@ -2,7 +2,6 @@
 layout: article
 title: "Disqus: Yay or Nay?"
 comments: true
-ads: true
 ---
 
 Just a short post today. While I was hacking away at Minimalog, working out

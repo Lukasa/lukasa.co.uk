@@ -2,7 +2,6 @@
 layout: article
 title: Big Redesign Time
 comments: true
-ads: true
 ---
 
 I first posted in this blog 14 months ago. In the history of humanity, that's

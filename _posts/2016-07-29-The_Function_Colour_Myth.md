@@ -2,7 +2,6 @@
 layout: article
 title: "The Function Colour Myth"
 comments: true
-ads: false
 image:
   feature: palais.jpg
   teaser: palais-teaser.jpg

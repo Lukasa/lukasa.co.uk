@@ -2,7 +2,6 @@
 layout: article
 title: I Don't Have Time For Your Sexism
 comments: true
-ads: true
 ---
 
 I've refrained from writing anything about the problem of gender and sexism in

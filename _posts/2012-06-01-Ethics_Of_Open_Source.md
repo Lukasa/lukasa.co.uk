@@ -2,7 +2,6 @@
 layout: article
 title: The Ethics of Open Source
 comments: true
-ads: true
 ---
 
 In my

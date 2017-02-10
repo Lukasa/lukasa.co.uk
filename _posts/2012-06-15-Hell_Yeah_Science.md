@@ -2,7 +2,6 @@
 layout: article
 title: Hell Yeah, Science!
 comments: true
-ads: true
 ---
 
 In case you haven't been paying attention, my [about page](/about/) indicates

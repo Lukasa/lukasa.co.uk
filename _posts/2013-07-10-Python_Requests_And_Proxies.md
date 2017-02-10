@@ -2,7 +2,6 @@
 layout: article
 title: Python Requests And Proxies
 comments: true
-ads: true
 ---
 
 One of [Requests](http://docs.python-requests.org/en/latest/)' most popular

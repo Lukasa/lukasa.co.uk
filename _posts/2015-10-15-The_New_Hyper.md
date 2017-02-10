@@ -2,7 +2,6 @@
 layout: article
 title: "The New Hyper"
 comments: false
-ads: false
 image:
   feature: palais.jpg
   teaser: palais-teaser.jpg

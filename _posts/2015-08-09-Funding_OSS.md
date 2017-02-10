@@ -2,7 +2,6 @@
 layout: article
 title: "Funding OSS"
 comments: false
-ads: false
 image:
   feature: palais.jpg
   teaser: palais-teaser.jpg

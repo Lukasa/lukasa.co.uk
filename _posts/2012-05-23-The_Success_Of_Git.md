@@ -2,7 +2,6 @@
 layout: article
 title: "The Success Of Git: Why Subversion Needs To Die"
 comments: true
-ads: true
 ---
 
 I've not been programming for all that long, but in that time I've used two

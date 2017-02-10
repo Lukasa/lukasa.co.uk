@@ -2,7 +2,6 @@
 layout: article
 title: An Update On Hyper
 comments: true
-ads: true
 ---
 
 About half an hour ago I pushed the latest release of

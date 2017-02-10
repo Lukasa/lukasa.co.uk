@@ -2,7 +2,6 @@
 layout: article
 title: HTTPS Is Not Just TLS
 comments: true
-ads: true
 ---
 
 Right now the CPython core development team are having an extremely lengthy

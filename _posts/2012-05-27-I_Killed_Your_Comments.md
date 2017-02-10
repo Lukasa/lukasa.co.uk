@@ -2,7 +2,6 @@
 layout: article
 title: Sorry, I Killed Your Comments
 comments: true
-ads: true
 ---
 
 Another brief post. This blog is now trialling the use of

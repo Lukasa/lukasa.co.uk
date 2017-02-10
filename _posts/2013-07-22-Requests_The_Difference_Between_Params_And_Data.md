@@ -2,7 +2,6 @@
 layout: article
 title: "Requests: The Difference Between Params and Data"
 comments: true
-ads: true
 ---
 
 This question pops up a lot on Stack Overflow, on GitHub, and in the IRC

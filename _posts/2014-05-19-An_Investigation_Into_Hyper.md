@@ -2,7 +2,6 @@
 layout: article
 title: An Investigation Into Hyper
 comments: true
-ads: true
 ---
 
 I've been working on hyper for a long time now, and it's finally in a state

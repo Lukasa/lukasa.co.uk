@@ -2,7 +2,6 @@
 layout: article
 title: "Patches Welcome"
 comments: true
-ads: false
 image:
   feature: palais.jpg
   teaser: palais-teaser.jpg

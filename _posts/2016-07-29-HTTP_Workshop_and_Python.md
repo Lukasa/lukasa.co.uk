@@ -2,7 +2,6 @@
 layout: article
 title: "The HTTP Workshop and Python"
 comments: true
-ads: false
 image:
   feature: palais.jpg
   teaser: palais-teaser.jpg

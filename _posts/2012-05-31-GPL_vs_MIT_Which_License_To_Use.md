@@ -2,7 +2,6 @@
 layout: article
 title: "The GPL vs. The MIT License: Which License To Use"
 comments: true
-ads: true
 ---
 
 A great many developers, myself included, believe that it is important to

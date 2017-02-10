@@ -2,7 +2,6 @@
 layout: article
 title: "collectr: Static File Management for All Of Us"
 comments: true
-ads: true
 ---
 
 A little while ago I wrote a blog post talking about

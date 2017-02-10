@@ -2,7 +2,6 @@
 layout: article
 title: Not All Opinions Are Equal
 comments: true
-ads: true
 ---
 
 This blog post is a reaction to

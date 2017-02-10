@@ -27,9 +27,6 @@ owner:
   name: "Cory Benfield"
   email: "lukasaoz@gmail.com"
   twitter: "lukasaoz"
-  google:
-    ad-client: "ca-pub-4960110047160240"
-    ad-slot: "4694319617"
   bio: "He's just this guy, you know?"
   avatar: bio-photo.jpg # 160x160 px image for author byline
 disqus-shortname: echochamber

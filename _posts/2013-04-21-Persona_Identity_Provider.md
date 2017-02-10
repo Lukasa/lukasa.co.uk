@@ -2,7 +2,6 @@
 layout: article
 title: I am a Persona Identity Provider
 comments: true
-ads: true
 ---
 
 Three weeks ago to the day

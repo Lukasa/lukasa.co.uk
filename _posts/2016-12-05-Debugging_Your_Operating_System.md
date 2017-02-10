@@ -2,7 +2,6 @@
 layout: article
 title: "Debugging Your Operating System: A Lesson In Memory Allocation"
 comments: true
-ads: false
 image:
   feature: palais.jpg
   teaser: palais-teaser.jpg

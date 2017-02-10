@@ -2,7 +2,6 @@
 layout: article
 title: Expanding Your Fileserver
 comments: true
-ads: true
 ---
 
 Quite some time ago, I wrote a blog post detailing how I made a

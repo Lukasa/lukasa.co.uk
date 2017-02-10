@@ -2,7 +2,6 @@
 layout: article
 title: "Certifi: The State Of The Union"
 comments: true
-ads: true
 image:
   feature: palais.jpg
   teaser: palais-teaser.jpg

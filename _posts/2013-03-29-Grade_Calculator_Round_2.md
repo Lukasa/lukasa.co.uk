@@ -2,7 +2,6 @@
 layout: article
 title: "Grade Calculator: Round 2"
 comments: true
-ads: true
 ---
 
 So, about 9 months ago I wrote a

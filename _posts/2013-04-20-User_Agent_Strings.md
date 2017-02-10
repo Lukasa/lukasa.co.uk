@@ -2,7 +2,6 @@
 layout: article
 title: User-Agent Strings (or, Don't Make Me Come After You)
 comments: true
-ads: true
 ---
 
 A very long time ago (read: ten years ago), we were in-between the so-called
