@@ -1,4 +1,15 @@
 # Footer navigation links
 
-- title:
-  url:
+- title: About Me
+  url: /about/
+  excerpt: "Information About Me"
+  image:
+
+- title: Archive
+  url: /archive/
+  excerpt: "Historial post archive"
+  image:
+
+- title: RSS
+  url: /rss.xml
+  excerpt: "RSS feed"
