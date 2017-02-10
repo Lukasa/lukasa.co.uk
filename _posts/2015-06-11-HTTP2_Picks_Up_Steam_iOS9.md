@@ -3,7 +3,6 @@ layout: article
 title: "HTTP/2 Picks Up Steam: iOS 9"
 image:
   feature: palais.jpg
-  teaser: palais-teaser.jpg
 ---
 
 I discovered something very exciting yesterday:

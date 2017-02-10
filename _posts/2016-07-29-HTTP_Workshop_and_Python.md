@@ -3,7 +3,6 @@ layout: article
 title: "The HTTP Workshop and Python"
 image:
   feature: palais.jpg
-  teaser: palais-teaser.jpg
 ---
 
 From the 25th to the 27th of July this year, I was in Stockholm, attending the [2nd HTTP Workshop](https://httpworkshop.github.io/). This event, a (so far) annual gathering of some of the leading experts in HTTP, is one of the most valuable events I've ever had the fortune to attend. Given that I was attending the event at least in part as a representative of the Python community, I thought it'd be good to share some of my thoughts and opinions in the wake of this event with that community.

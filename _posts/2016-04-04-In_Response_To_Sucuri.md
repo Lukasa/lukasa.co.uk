@@ -3,7 +3,6 @@ layout: article
 title: "In Response To Sucuri Security"
 image:
   feature: palais.jpg
-  teaser: palais-teaser.jpg
 ---
 
 A few days ago, a company called [Sucuri Security](https://sucuri.net/) posted a blog article that purported to follow up on a paper called [The Most Dangerous Code In The World](https://www.cs.utexas.edu/~shmat/shmat_ccs12.pdf). This paper, which is relatively well known, talks about how many TLS-using implementations in popular programming languages fail to do appropriate verifications of TLS certificates, leading them to accept invalid certificates.

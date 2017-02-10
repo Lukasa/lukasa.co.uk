@@ -3,7 +3,6 @@ layout: article
 title: "Funding OSS"
 image:
   feature: palais.jpg
-  teaser: palais-teaser.jpg
 ---
 
 It's time to have a conversation, folks.

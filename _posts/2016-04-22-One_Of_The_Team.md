@@ -3,7 +3,6 @@ layout: article
 title: "One Of The Team: The Hyper Project"
 image:
   feature: palais.jpg
-  teaser: palais-teaser.jpg
 ---
 
 As [the Hyper project](http://python-hyper.org/) keeps growing, it's important to realise when it's become bigger than one person. The best open source projects are build around a collection of individuals who are all motivated towards a shared goal of success: having a group like that makes a project less likely to die, more likely to accurately reflect the needs of its users, and incentivises people to want to work *within* the project to improve it, rather than build something totally brand new outside it.

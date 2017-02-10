@@ -3,7 +3,6 @@ layout: article
 title: "Certifi: The State Of The Union"
 image:
   feature: palais.jpg
-  teaser: palais-teaser.jpg
 ---
 
 Shortly I'll be pushing out a new release of the excellent [certifi project](http://certifi.io/en/latest/). This will be certifi's first release in a little while, and I want to explain why it took so long and what's happening over the next few months.

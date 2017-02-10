@@ -3,7 +3,6 @@ layout: article
 title: "Five Whys on Requests 2.12"
 image:
   feature: palais.jpg
-  teaser: palais-teaser.jpg
 ---
 
 Every now and then on big open source projects we have releases that seem to be particularly troubled. Some decision we made breaks a whole bunch of people's code, and then each fix we attempt to make produces new, unforseen problems. These releases can be very dispiriting for project maintainers, because they make it seem like every time we try to improve something we get stuck on the mistakes our past selves made.

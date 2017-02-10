@@ -3,7 +3,6 @@ layout: article
 title: "More HTTP/2 News"
 image:
   feature: palais.jpg
-  teaser: palais-teaser.jpg
 ---
 
 Just a short one today folks. I wanted to indicate some exciting stuff that's

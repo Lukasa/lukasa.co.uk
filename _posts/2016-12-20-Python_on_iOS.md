@@ -3,7 +3,6 @@ layout: article
 title: "Python on iOS"
 image:
   feature: palais.jpg
-  teaser: palais-teaser.jpg
 ---
 
 This holiday I discovered [Pythonista](https://itunes.apple.com/gb/app/pythonista-3/id1085978097?mt=8), and my mind was blown.

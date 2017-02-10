@@ -3,7 +3,6 @@ layout: article
 title: "The New Hyper"
 image:
   feature: palais.jpg
-  teaser: palais-teaser.jpg
 ---
 
 I'm delighted to announce that today is the release date of version 1.0.0 of

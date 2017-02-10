@@ -3,7 +3,6 @@ layout: article
 title: "Debugging Your Operating System: A Lesson In Memory Allocation"
 image:
   feature: palais.jpg
-  teaser: palais-teaser.jpg
 ---
 
 *Edit: Hello Hacker News! Good to see you again! I don't want to take away the fun of reading my post digging into memory management, and the joy you'll have in finding every little mistake I have made. But I feel obliged to remind you all that while it's great to focus on technical esoterica (I get it, it's really fun!), we don't write our software in a vacuum. So in addition to seeking out technical content that educates and edifies, which I hope my own does, I also strongly encourage you to seek out writing that educates and challenges you on political topics. As software developers we are uniquely privileged to be at the forefront of revolutionising society over the next few decades, and it is incumbent upon us to be as informed and nuanced as we can be about the role our work plays in society as a whole.*

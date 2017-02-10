@@ -3,7 +3,6 @@ layout: article
 title: PyCon I Love You
 image:
   feature: palais.jpg
-  teaser: palais-teaser.jpg
 ---
 
 I'm coming to the end of my time at PyCon 2015.

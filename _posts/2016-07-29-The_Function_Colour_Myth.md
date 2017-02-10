@@ -3,7 +3,6 @@ layout: article
 title: "The Function Colour Myth"
 image:
   feature: palais.jpg
-  teaser: palais-teaser.jpg
 ---
 
 ## Or: async/await is not what you think it is.

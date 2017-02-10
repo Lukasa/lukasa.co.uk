@@ -3,7 +3,6 @@ layout: article
 title: "Debugging With Wireshark: TLS"
 image:
   feature: palais.jpg
-  teaser: palais-teaser.jpg
 ---
 
 Sometimes in my darker moments I forget that not all programmers get to work with computer networks every day, like I do. This means that many of you don't have a chance to experience some of the tools and debugging experiences that I do on a nearly daily basis. This is a real shame, because some of the tools available to programmers working with computer networks are some of the coolest available to any programmer.

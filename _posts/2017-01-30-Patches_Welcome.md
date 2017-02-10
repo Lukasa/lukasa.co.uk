@@ -3,7 +3,6 @@ layout: article
 title: "Patches Welcome"
 image:
   feature: palais.jpg
-  teaser: palais-teaser.jpg
 ---
 
 For the last 18 months I have been a full-time Open Source Software maintainer. Since starting that role I have taken over the major maintenance work for upwards of 10 software projects, with a cumulative monthly download count somewhere near the millions. In calendar year 2016 I received 15,000 emails from GitHub, despite religiously unsubscribing myself from repositories where I have the commit bit but no major maintenance responsibility.
