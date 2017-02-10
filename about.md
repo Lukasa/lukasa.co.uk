@@ -3,6 +3,8 @@ layout: article
 permalink: /about/
 title: "About Me"
 share: false
+image:
+  feature: palais.jpg
 ---
 
 ## Hi. I'm Cory.

@@ -2,6 +2,8 @@
 layout: archive
 permalink: /archive/
 title: "Archive"
+image:
+  feature: palais.jpg
 ---
 
 <div class="tiles">
