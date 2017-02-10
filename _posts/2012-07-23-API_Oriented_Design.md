@@ -1,7 +1,6 @@
 ---
 layout: article
 title: The Importance of API-Oriented Design
-comments: true
 ---
 
 Many programmers (or coders, or software engineers, or computer wizards, or

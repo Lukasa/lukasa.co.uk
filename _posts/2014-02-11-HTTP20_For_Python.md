@@ -1,7 +1,6 @@
 ---
 layout: article
 title: HTTP/2.0 For Python
-comments: true
 ---
 
 The HTTPbis have spoken, HTTP/2.0 is happening. Major websites are beginning to

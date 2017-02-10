@@ -1,7 +1,6 @@
 ---
 layout: article
 title: "Python on iOS"
-comments: true
 image:
   feature: palais.jpg
   teaser: palais-teaser.jpg

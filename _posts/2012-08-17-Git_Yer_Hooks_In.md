@@ -1,7 +1,6 @@
 ---
 layout: article
 title: Git Yer Hooks In
-comments: true
 ---
 
 Git, like all good source control systems, allows you to customise the

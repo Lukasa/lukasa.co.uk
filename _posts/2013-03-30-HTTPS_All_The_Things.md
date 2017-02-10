@@ -1,7 +1,6 @@
 ---
 layout: article
 title: HTTPS All The Things (Especially This Thing)
-comments: true
 ---
 
 I think we can all agree that [HTTPS](http://en.wikipedia.org/wiki/HTTP_Secure)

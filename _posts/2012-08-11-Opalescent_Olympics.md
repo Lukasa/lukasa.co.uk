@@ -1,7 +1,6 @@
 ---
 layout: article
 title: Opalescent Olympics
-comments: true
 ---
 
 *Author's Note: I'm taking a break from writing about tech to write about

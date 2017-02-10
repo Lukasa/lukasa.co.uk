@@ -1,7 +1,6 @@
 ---
 layout: article
 title: Let's Build A Fileserver!
-comments: true
 ---
 
 Those of you who know me will be familiar with the fact that I am what could

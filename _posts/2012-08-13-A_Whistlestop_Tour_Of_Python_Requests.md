@@ -1,7 +1,6 @@
 ---
 layout: article
 title: A Whistlestop Tour of Python Requests
-comments: true
 ---
 
 Return to our regularly scheduled technical blogging, I'm going to give a

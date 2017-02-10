@@ -1,7 +1,6 @@
 ---
 layout: article
 title: OAuth Needs To Die In A Fire
-comments: true
 ---
 
 As a personal project I've recently been looking into creating a small Twitter

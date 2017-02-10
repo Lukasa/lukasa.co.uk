@@ -1,7 +1,6 @@
 ---
 layout: article
 title: Open Source Currency
-comments: true
 ---
 
 Based on anecdotal data I can safely say that most people view "Open Source" as

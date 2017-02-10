@@ -1,7 +1,6 @@
 ---
 layout: article
 title: "Hyper: The State of the Union"
-comments: true
 ---
 
 It's been a few months since I last spoke about

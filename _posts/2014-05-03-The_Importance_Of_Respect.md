@@ -1,7 +1,6 @@
 ---
 layout: article
 title: The Importance of Respect
-comments: true
 ---
 
 While chatting in IRC with [Eric Holscher](http://ericholscher.com/) tonight

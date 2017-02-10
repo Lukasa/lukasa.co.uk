@@ -1,7 +1,6 @@
 ---
 layout: article
 title: "One Of The Team: The Hyper Project"
-comments: true
 image:
   feature: palais.jpg
   teaser: palais-teaser.jpg

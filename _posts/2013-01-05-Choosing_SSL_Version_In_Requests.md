@@ -1,7 +1,6 @@
 ---
 layout: article
 title: Choosing The SSL Version In Python Requests
-comments: true
 ---
 
 Over the last few months (and probably for quite a while before then too), a

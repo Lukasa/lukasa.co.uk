@@ -1,7 +1,6 @@
 ---
 layout: article
 title: Not All Opinions Are Equal
-comments: true
 ---
 
 This blog post is a reaction to

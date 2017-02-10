@@ -1,7 +1,6 @@
 ---
 layout: article
 title: A Brief Digression About Logging
-comments: true
 ---
 
 Logging is an interesting subject. For most developers, most of the time, we

@@ -1,7 +1,6 @@
 ---
 layout: article
 title: Politeness and Open-Source Software
-comments: true
 ---
 
 Over the last couple of weeks, there has been what can really only be called a

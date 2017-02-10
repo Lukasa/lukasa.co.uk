@@ -1,7 +1,6 @@
 ---
 layout: article
 title: Writing A Transport Adapter
-comments: true
 ---
 
 [Last post](/2012/12/Not_All_Opinions_Are_Equal/) I briefly mentioned that

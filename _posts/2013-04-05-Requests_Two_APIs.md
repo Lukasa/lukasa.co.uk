@@ -1,7 +1,6 @@
 ---
 layout: article
 title: Requests' Two APIs
-comments: true
 ---
 
 [Kenneth Reitz](http://kennethreitz.org/)'s excellent

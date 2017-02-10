@@ -1,7 +1,6 @@
 ---
 layout: article
 title: "More HTTP/2 News"
-comments: false
 image:
   feature: palais.jpg
   teaser: palais-teaser.jpg

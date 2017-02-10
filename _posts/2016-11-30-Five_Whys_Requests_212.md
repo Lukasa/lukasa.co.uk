@@ -1,7 +1,6 @@
 ---
 layout: article
 title: "Five Whys on Requests 2.12"
-comments: true
 image:
   feature: palais.jpg
   teaser: palais-teaser.jpg

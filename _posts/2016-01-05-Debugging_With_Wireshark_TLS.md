@@ -1,7 +1,6 @@
 ---
 layout: article
 title: "Debugging With Wireshark: TLS"
-comments: true
 image:
   feature: palais.jpg
   teaser: palais-teaser.jpg

@@ -1,7 +1,6 @@
 ---
 layout: article
 title: Caching In Python Requests
-comments: true
 ---
 
 I think I've made it clear in the past that I think

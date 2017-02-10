@@ -1,7 +1,6 @@
 ---
 layout: article
 title: PyCon I Love You
-comments: true
 image:
   feature: palais.jpg
   teaser: palais-teaser.jpg

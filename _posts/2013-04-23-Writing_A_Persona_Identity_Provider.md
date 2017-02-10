@@ -1,7 +1,6 @@
 ---
 layout: article
 title: Writing A Persona Identity Provider
-comments: true
 ---
 
 As I said in my [last post](//lukasa.co.uk/2013/04/Persona_Identity_Provider/),
