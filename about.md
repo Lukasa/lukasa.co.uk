@@ -65,6 +65,9 @@ I was one of the earliest developers working on [Project Calico](https://www.pro
 
 I'm an experienced conference speaker. You can find a number of my talks below:
 
+- [Requests Under The Hood](https://youtu.be/ptbCIvve6-k), PyCon 2017
+- [Why /dev/random is a horrible idea](https://youtu.be/4E7uQD3lpus), PyCon UK 2016
+- [If Only Everything Was Radioactive: Randomness and Computing](https://youtu.be/_gxYs4CxwK8), PyCon UK 2016
 - [Building Protocol Libraries The Right Way](https://www.youtube.com/watch?v=7cC3_jGwl_U), PyCon 2016
 - [Hyperactive: HTTP/2 And Python](https://youtu.be/ACXVyvm5eTc), PyCon 2015
 - [You Don't Care About Efficiency: Synchronous Code Is Dying](https://youtu.be/7b4z7y6Lohw), Kiwi PyCon 2015
