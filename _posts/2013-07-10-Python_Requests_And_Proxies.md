@@ -144,9 +144,8 @@ lot here, but we don't have time for the full discussion.)
 
 The solution has been to use the HTTP CONNECT verb. The CONNECT verb
 essentially turns HTTP into a tunnel over which you can send raw TCP data. This
-is obviously ludicrously inefficient (TCP over HTTP over TCP), but means the
-proxy can pass your handshake (and then the subsequent encrypted messages)
-along without needing to be able to read them.
+means the proxy can pass your handshake (and then the subsequent encrypted
+messages) along without needing to be able to read them.
 
 So what's the problem?
 
