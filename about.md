@@ -13,13 +13,13 @@ I'm a software engineer, a physics graduate, and an Australian/British dual citi
 
 Alternatively, if you just want to chat or see my work, you can find me on [GitHub](https://github.com/Lukasa), or on [Twitter](https://twitter.com/Lukasaoz).
 
-If you're concerned about data privacy when contacting me, here's some useful information. I live and work in **London**, in the **United Kingdom**. My personal email accounts are currently managed by **Google**. My work email is managed by my employer, **Hewlett Packard Enterprise**. My websites are hosted by **GitHub**.
+If you're concerned about data privacy when contacting me, here's some useful information. I live and work in **London**, in the **United Kingdom**. My personal email accounts are currently managed by **Google**. My work email is managed by my employer, **Apple**. My websites are hosted by **GitHub**.
 
 ### Me
 
 I was born in Sydney, Australia, but I moved to Melbourne when I was very young. I grew up in Melbourne, and spent my teenage years in Oxford, England. I went to university in St Andrews, Scotland. Now, as an adult, I'm a software engineer living in London.
 
-Software engineering is my dream job and what I love to do. I work at [Hewlett Packard Enterprise](https://www.hpe.com/uk/en/home.html) building open source HTTP software for the Python community. It's a fantastic job, and you'll find me doing it more often than is strictly healthy.
+Software engineering is my dream job and what I love to do. I'm currently a Senior Software Engineer at Apple in London. My job is fantastic, and I wouldn't want to do anything else.
 
 In addition to programming, I love reading, watching films and television, and sports. I'm a huge fan of a number of sports teams, including (for my sins) the Melbourne Demons.
 
@@ -27,7 +27,7 @@ If you feel like chatting (and I always do), you can find me on a number of soci
 
 ### Employment / Open Source
 
-I'm an active member of the Python open-source community, both in my spare time and in my day job. At my day job, I work for [Hewlett Packard Enterprise](https://www.hpe.com/uk/en/home.html), building open source Python HTTP software, which is my long-time passion.
+I'm an active member of the Python open-source community, and have spent most of my career building open source Python HTTP software, which is my long-time passion.
 
 I have a significant role in the following Open Source projects.
 
